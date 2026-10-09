@@ -1,5 +1,6 @@
+negative (audited): preregistered Hetionet drug-repurposing link prediction missed gates D2 and D3; no compound-popularity artifact (gene-degree AUROC 0.53 vs MLP 0.77), but the D10 hits@10 headline (M 0.377) is INFLATED for every method (degenerate original baseline B1 and candidate-set popularity leak, B4 0.270 vs random 0.089; see RESULTS.md Audit).
+
 # doc230-cbio037-drug-repurposing
-Audited: no compound-popularity artifact (compound gene-degree AUROC 0.53 vs MLP 0.77); D10 original B1 baseline was degenerate (see RESULTS.md Audit). Verdicts unchanged.
 Preregistered benchmark of drug-repurposing link prediction on Hetionet (CPU). See PREREG.md, RESULTS.md, src/run.py. Data: /tmp/het files from hetio/hetionet (hashes in data_manifest). Gates D2 and D3 missed.
 
 ## Reproduce / readability audit (2026-10-09)
